@@ -1,8 +1,13 @@
 import React from 'react'
 import StackNavigation from './src/navigation/StackNavigation'
+import { Provider as PaperProvider } from 'react-native-paper' 
 
 const App = () => (
-    <StackNavigation />
+
+    <PaperProvider>
+        <StackNavigation />
+    </PaperProvider>
+
 )
 
 export default App
