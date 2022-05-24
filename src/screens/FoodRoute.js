@@ -4,15 +4,11 @@ import { Text } from 'react-native-paper'
 import {data} from '../../assets/json/products.js'
 
 
-const FoodRoute = (props) => {
-
-  console.log(props)
-
-  const route = props.route
+const FoodRoute = ({route}) => {
 
   return (
     <View style={{ flex : 1, backgroundColor : 'black' }}>
-      
+
       <View style={{ flex : 1, paddingVertical : 15, flexDirection : 'row' }}>
 
         <View style={{ flex : 2 }}>

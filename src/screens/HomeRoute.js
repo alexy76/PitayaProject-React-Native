@@ -3,6 +3,7 @@ import { View, Image } from 'react-native'
 import { Text } from 'react-native-paper'
 
 const HomeRoute = () => (
+
 <View style={{ flex : 1, backgroundColor : 'black' }}>
   <View style={{ flex : 3, paddingVertical : 15 }}>
     <Image source={require('../../assets/img/logo.png')} style={{ width : 'auto', height : '100%', resizeMode : 'contain' }} />

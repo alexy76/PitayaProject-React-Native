@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { BottomNavigation } from 'react-native-paper'
-
 import HomeRoute from '../screens/HomeRoute';
 import FoodRoute from '../screens/FoodRoute';
 import InfoRoute from '../screens/InfoRoute';
@@ -23,7 +22,6 @@ const TabNavigation = ({navigation: navigationStack}) => {
     food: FoodRoute,
     info: InfoRoute,
     contact: ContactRoute,
-    navigation : navigationStack,
   }, 
   );
 

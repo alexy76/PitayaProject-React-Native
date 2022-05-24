@@ -7,8 +7,8 @@ import ProductsScreen from '../screens/ProductsScreen'
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
-const StackNavigation = () => {
-  return (
+const StackNavigation = () => (
+
       <SafeAreaProvider>
 
           <NavigationContainer>
@@ -17,7 +17,10 @@ const StackNavigation = () => {
 
                     <Screen name='bottomNav' component={TabNavigation} options={{headerShown : false}} />
 
-                    <Screen name='screenProduct' component={ProductsScreen} options={{
+                    <Screen 
+                    name='screenProduct' 
+                    component={ProductsScreen} 
+                    options={{
                         headerTintColor: '#EC6810',
                         headerTitle : 'test',
                         headerTitleStyle: {
@@ -33,10 +36,7 @@ const StackNavigation = () => {
 
           </NavigationContainer>
 
-          
-
       </SafeAreaProvider>
   )
-}
 
 export default StackNavigation
